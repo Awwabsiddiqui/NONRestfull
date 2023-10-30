@@ -13,7 +13,7 @@ import com.telusko.demo.model.Alien;
 @Controller
 public class AlienController {
 //	@Autowired
-//	AlienRepo repo;// git check
+//	AlienRepo repo;// git check asd
 	
 	@Autowired
 	EntityDO entDO;
