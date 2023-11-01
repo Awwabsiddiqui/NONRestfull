@@ -18,15 +18,16 @@ public class AlienController {
 	@Autowired
 	EntityDO entDO;
 	
-	@GetMapping("/")
+	@RequestMapping("/")
 	// @ResponseBody
 	public ModelAndView home() {
 		ModelAndView mv = new ModelAndView();
+		entDO.listAllOrdered();
 		mv.setViewName("home");
 		return mv;
 	}
 
-	@GetMapping("/addEntity")
+	@RequestMapping("/addEntity")
 	public ModelAndView addEntity() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("addEntity");

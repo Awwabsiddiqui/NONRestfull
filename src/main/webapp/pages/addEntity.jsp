@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="saveEntity">
+<form action="saveEntity" method="post">
 	<input type="text" name="aid"><br>
 	<input type="text" name="aname"><br>
 	<input type="submit"><br>

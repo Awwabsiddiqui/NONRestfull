@@ -28,6 +28,7 @@ public class EntityDO {
 	public void listAllOrdered() {
 		System.out.println(repo.findAllByOrderByAnameAsc());
 		System.out.println(repo.findAll( new Sort(Sort.Direction.ASC, "aname")));
+		System.out.println(repo.findByCustomQuery("aname"));
 	}
 	
 }
